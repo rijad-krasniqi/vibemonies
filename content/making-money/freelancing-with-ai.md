@@ -9,7 +9,7 @@ tags:
   - ai-hustles
   - frameworks
 image: /images/uploads/g9jhwdrwmaeixhu.jpeg
-draft: true
+draft: false
 ---
 
 Some freelancers are making 5-10x what they made two years ago. Same skills. Same hours. Different tools.
