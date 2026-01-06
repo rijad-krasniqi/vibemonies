@@ -7,7 +7,7 @@ description: DraftKings launched prediction markets in December 2025. Here's how
 image: /images/uploads/draftking_predictions.png
 keywords: draftkings predictions, draftkings prediction markets, draftkings
   event contracts, draftkings vs kalshi, sports prediction markets
-draft: true
+draft: false
 ---
 DraftKings just entered prediction markets. The sports betting giant launched their "Predictions" feature in December 2025, and it's already changing the game.
 
