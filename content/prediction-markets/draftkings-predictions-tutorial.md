@@ -1,10 +1,14 @@
 ---
 title: "DraftKings Predictions: How to Use the New Event Market"
 date: 2026-01-05
-description: "DraftKings launched prediction markets in December 2025. Here's how to use them, what markets are available, and how it compares to Kalshi and Polymarket."
-keywords: "draftkings predictions, draftkings prediction markets, draftkings event contracts, draftkings vs kalshi, sports prediction markets"
+description: DraftKings launched prediction markets in December 2025. Here's how
+  to use them, what markets are available, and how it compares to Kalshi and
+  Polymarket.
+image: /images/uploads/draftking_predictions.png
+keywords: draftkings predictions, draftkings prediction markets, draftkings
+  event contracts, draftkings vs kalshi, sports prediction markets
+draft: true
 ---
-
 DraftKings just entered prediction markets. The sports betting giant launched their "Predictions" feature in December 2025, and it's already changing the game.
 
 If you're a DraftKings user, you now have access to event contracts without leaving the platform. Here's how it works.
@@ -15,10 +19,10 @@ DraftKings acquired Railbird, a prediction market exchange, and integrated it in
 
 Available markets include:
 
-- **Sports:** Game outcomes, player props, season predictions
-- **Entertainment:** Award shows, TV show outcomes, celebrity events
-- **Politics:** Election outcomes, policy decisions
-- **Finance:** Fed decisions, economic indicators
+* **Sports:** Game outcomes, player props, season predictions
+* **Entertainment:** Award shows, TV show outcomes, celebrity events
+* **Politics:** Election outcomes, policy decisions
+* **Finance:** Fed decisions, economic indicators
 
 Sports is clearly the focus. DraftKings knows their audience.
 
@@ -32,6 +36,8 @@ Sports is clearly the focus. DraftKings knows their audience.
 6. Confirm the trade
 
 If you've ever placed a sports bet on DraftKings, this will feel familiar. The interface is designed to be accessible to existing users.
+
+![draftkings_predictions_homepage](/images/uploads/draftking_articlewebpage.png)
 
 ## The Key Difference From Sports Betting
 
@@ -53,12 +59,12 @@ The real advantage is convenience. If you already have money in DraftKings, you 
 
 ## DraftKings vs Kalshi vs Polymarket
 
-| Feature | DraftKings | Kalshi | Polymarket |
-|---------|------------|--------|------------|
-| Sports Markets | 5/5 | 4/5 | 2/5 |
-| Political Markets | 3/5 | 4/5 | 5/5 |
-| Ease of Use | 5/5 | 4/5 | 3/5 |
-| Market Selection | 3/5 | 4/5 | 5/5 |
+| Feature           | DraftKings | Kalshi | Polymarket |
+| ----------------- | ---------- | ------ | ---------- |
+| Sports Markets    | 5/5        | 4/5    | 2/5        |
+| Political Markets | 3/5        | 4/5    | 5/5        |
+| Ease of Use       | 5/5        | 4/5    | 3/5        |
+| Market Selection  | 3/5        | 4/5    | 5/5        |
 
 **Bottom line:** Use DraftKings if you're primarily interested in sports and want the simplest experience. Use Kalshi or Polymarket for deeper markets and more variety.
 
@@ -76,10 +82,10 @@ Since DraftKings is strongest on sports, here are strategies that work well ther
 
 This is a good fit if you:
 
-- Already use DraftKings for sports betting
-- Want to try prediction markets without opening new accounts
-- Are primarily interested in sports markets
-- Prefer a mobile-first, simple interface
+* Already use DraftKings for sports betting
+* Want to try prediction markets without opening new accounts
+* Are primarily interested in sports markets
+* Prefer a mobile-first, simple interface
 
 Look elsewhere if you want deep political markets, crypto-related markets, or advanced trading tools.
 
