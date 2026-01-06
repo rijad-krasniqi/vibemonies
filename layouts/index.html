@@ -1,0 +1,196 @@
+{{ define "head" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "VibeMonies",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Prediction Markets. Vibe Coding. New Era Money.</h1>
+  <p>Real strategies from real people making real money in 2026. No fluff. No BS. Just what actually works.</p>
+</section>
+
+<!-- Category Navigation Pills -->
+<div class="category-nav">
+  <a href="/" class="all">All Posts</a>
+  <a href="/prediction-markets/" class="prediction-markets">Prediction Markets</a>
+  <a href="/vibe-coding/" class="vibe-coding">Vibe Coding</a>
+  <a href="/making-money/" class="making-money">Making Money</a>
+</div>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stat-card">
+    <div class="stat-number">21+</div>
+    <div class="stat-label">In-Depth Guides</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Core Topics</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">2026</div>
+    <div class="stat-label">Latest Strategies</div>
+  </div>
+</div>
+
+<!-- Featured Post (Latest) -->
+{{ $featured := first 1 (where .Site.RegularPages "Type" "!=" "page") }}
+{{ range $featured }}
+<div class="featured-post">
+  <div class="post-card-image">
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    {{ else }}
+    <div class="category-icon">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+    </div>
+    {{ end }}
+  </div>
+  <div class="post-card-content">
+    <span class="featured-label">Featured Post</span>
+    {{ $section := .CurrentSection.Title }}
+    {{ $sectionSlug := .CurrentSection.File.ContentBaseName }}
+    <span class="category-tag {{ $sectionSlug }}">{{ $section }}</span>
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p class="post-excerpt">{{ .Description }}</p>
+    <div class="post-meta">
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+    <a href="{{ .Permalink }}" class="read-more">Read Article →</a>
+  </div>
+</div>
+{{ end }}
+
+<!-- Prediction Markets Section -->
+{{ $predictionPosts := where .Site.RegularPages "Section" "prediction-markets" }}
+{{ if $predictionPosts }}
+<div class="category-section prediction-markets">
+  <div class="section-header">
+    <h2>Prediction Markets</h2>
+    <a href="/prediction-markets/">View all {{ len $predictionPosts }} articles →</a>
+  </div>
+  <div class="posts-grid">
+    {{ range first 3 $predictionPosts }}
+    <div class="post-card">
+      <div class="post-card-image prediction-markets">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        {{ else }}
+        <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        {{ end }}
+      </div>
+      <div class="post-card-content">
+        <span class="category-tag prediction-markets">Prediction Markets</span>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="post-excerpt">{{ .Description }}</p>
+        <div class="post-meta">
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span>{{ .ReadingTime }} min</span>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- Vibe Coding Section -->
+{{ $vibePosts := where .Site.RegularPages "Section" "vibe-coding" }}
+{{ if $vibePosts }}
+<div class="category-section vibe-coding">
+  <div class="section-header">
+    <h2>Vibe Coding</h2>
+    <a href="/vibe-coding/">View all {{ len $vibePosts }} articles →</a>
+  </div>
+  <div class="posts-grid">
+    {{ range first 3 $vibePosts }}
+    <div class="post-card">
+      <div class="post-card-image vibe-coding">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        {{ else }}
+        <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        {{ end }}
+      </div>
+      <div class="post-card-content">
+        <span class="category-tag vibe-coding">Vibe Coding</span>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="post-excerpt">{{ .Description }}</p>
+        <div class="post-meta">
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span>{{ .ReadingTime }} min</span>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- Making Money Section -->
+{{ $moneyPosts := where .Site.RegularPages "Section" "making-money" }}
+{{ if $moneyPosts }}
+<div class="category-section making-money">
+  <div class="section-header">
+    <h2>Making Money</h2>
+    <a href="/making-money/">View all {{ len $moneyPosts }} articles →</a>
+  </div>
+  <div class="posts-grid">
+    {{ range first 3 $moneyPosts }}
+    <div class="post-card">
+      <div class="post-card-image making-money">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        {{ else }}
+        <svg class="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        {{ end }}
+      </div>
+      <div class="post-card-content">
+        <span class="category-tag making-money">Making Money</span>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="post-excerpt">{{ .Description }}</p>
+        <div class="post-meta">
+          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span>{{ .ReadingTime }} min</span>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- Newsletter Section -->
+<div class="newsletter">
+  <h3>Stay Ahead of the Curve</h3>
+  <p>Get weekly insights on prediction markets, vibe coding, and new ways to make money delivered straight to your inbox.</p>
+  <form class="newsletter-form" action="#" method="POST">
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<!-- Browse by Category -->
+<div class="browse-section">
+  <h3>Explore All Topics</h3>
+  <div class="browse-links">
+    <a href="/prediction-markets/">Prediction Markets →</a>
+    <a href="/vibe-coding/">Vibe Coding →</a>
+    <a href="/making-money/">Making Money →</a>
+  </div>
+</div>
+{{ end }}

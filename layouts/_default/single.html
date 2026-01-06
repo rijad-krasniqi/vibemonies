@@ -1,0 +1,75 @@
+{{ define "head" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  {{ if .Params.image }}
+  "image": "{{ .Params.image | absURL }}",
+  {{ end }}
+  "author": {
+    "@type": "Organization",
+    "name": "VibeMonies",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "VibeMonies",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<article>
+  {{ $section := .CurrentSection.Title }}
+  {{ $sectionSlug := .CurrentSection.File.ContentBaseName }}
+  <span class="category-tag {{ $sectionSlug }}">{{ $section }}</span>
+  <h1>{{ .Title }}</h1>
+  <p class="article-meta">
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    <span>&middot;</span>
+    <span>{{ .ReadingTime }} min read</span>
+  </p>
+
+  {{ if .Params.image }}
+  <div class="article-featured-image">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  <!-- Related Posts -->
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+    <h3 style="margin-bottom: 1.5rem;">Related Posts</h3>
+    <div class="posts-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+      {{ range . }}
+      <div class="post-card">
+        <div class="post-card-content">
+          {{ $section := .CurrentSection.Title }}
+          {{ $sectionSlug := .CurrentSection.File.ContentBaseName }}
+          <span class="category-tag {{ $sectionSlug }}">{{ $section }}</span>
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <div class="post-meta">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            <span>{{ .ReadingTime }} min</span>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</article>
+{{ end }}
