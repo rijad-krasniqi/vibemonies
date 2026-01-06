@@ -1,9 +1,15 @@
 ---
-title: "10x Your Freelancing Income with AI Tools"
+title: 10x Your Freelancing Income with AI Tools
 date: 2026-01-05
-description: "How top freelancers use AI to earn more while working less. Specific tools, workflows, and strategies for every skill."
-keywords: "freelancing with ai, ai tools freelancers, increase freelance income, ai productivity, freelance automation"
-tags: ["ai-hustles", "frameworks"]
+description: How top freelancers use AI to earn more while working less.
+  Specific tools, workflows, and strategies for every skill.
+keywords: freelancing with ai, ai tools freelancers, increase freelance income,
+  ai productivity, freelance automation
+tags:
+  - ai-hustles
+  - frameworks
+image: /images/uploads/g9jhwdrwmaeixhu.jpeg
+draft: true
 ---
 
 Some freelancers are making 5-10x what they made two years ago. Same skills. Same hours. Different tools.
