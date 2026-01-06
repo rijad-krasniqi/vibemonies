@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: rijad-krasniqi/vibemonies
   branch: main
 
 # Local backend for testing (uncomment when developing locally)
