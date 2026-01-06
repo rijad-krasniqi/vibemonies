@@ -5,48 +5,153 @@
   "@type": "Article",
   "headline": "{{ .Title }}",
   "description": "{{ .Description }}",
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   {{ if .Params.image }}
   "image": "{{ .Params.image | absURL }}",
   {{ end }}
   "author": {
-    "@type": "Organization",
-    "name": "VibeMonies",
+    "@type": "Person",
+    "name": "VibeMonies Team",
     "url": "{{ .Site.BaseURL }}"
   },
   "publisher": {
     "@type": "Organization",
     "name": "VibeMonies",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ .Site.BaseURL }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}images/logo.png"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
-  }
+  },
+  "wordCount": "{{ .WordCount }}",
+  "articleSection": "{{ .CurrentSection.Title }}"
+}
+</script>
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .CurrentSection.Title }}",
+      "item": "{{ .CurrentSection.Permalink }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
 }
 </script>
 {{ end }}
 
 {{ define "main" }}
+<!-- Reading Progress Bar -->
+<div class="reading-progress" id="reading-progress"></div>
+
 <article>
+  <!-- Breadcrumbs -->
   {{ $section := .CurrentSection.Title }}
   {{ $sectionSlug := .CurrentSection.File.ContentBaseName }}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="separator">›</span>
+    <a href="{{ .CurrentSection.Permalink }}">{{ $section }}</a>
+    <span class="separator">›</span>
+    <span class="current">{{ .Title | truncate 40 }}</span>
+  </nav>
+
   <span class="category-tag {{ $sectionSlug }}">{{ $section }}</span>
   <h1>{{ .Title }}</h1>
-  <p class="article-meta">
-    <span>{{ .Date.Format "January 2, 2006" }}</span>
-    <span>&middot;</span>
-    <span>{{ .ReadingTime }} min read</span>
-  </p>
+
+  <div class="article-meta">
+    <span class="meta-date">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      {{ .Date.Format "January 2, 2006" }}
+    </span>
+    <span class="meta-divider">&middot;</span>
+    <span class="meta-reading">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      {{ .ReadingTime }} min read
+    </span>
+    {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
+    <span class="meta-divider">&middot;</span>
+    <span class="meta-updated">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+      Updated {{ .Lastmod.Format "Jan 2, 2006" }}
+    </span>
+    {{ end }}
+  </div>
 
   {{ if .Params.image }}
   <div class="article-featured-image">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
   </div>
   {{ end }}
 
-  {{ .Content }}
+  <!-- Table of Contents -->
+  {{ if .TableOfContents }}
+  <div class="toc-wrapper">
+    <button class="toc-toggle" onclick="this.parentElement.classList.toggle('open')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      Table of Contents
+      <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+    <nav class="toc-content">
+      {{ .TableOfContents }}
+    </nav>
+  </div>
+  {{ end }}
+
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+
+  <!-- Social Sharing -->
+  <div class="social-share">
+    <span class="share-label">Share this article:</span>
+    <div class="share-buttons">
+      <a href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="share-btn twitter" aria-label="Share on Twitter">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | urlquery }}&title={{ .Title | urlquery }}" target="_blank" rel="noopener" class="share-btn linkedin" aria-label="Share on LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="share-btn facebook" aria-label="Share on Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <button class="share-btn copy-link" onclick="copyLink()" aria-label="Copy link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Author Bio -->
+  <div class="author-bio">
+    <div class="author-avatar">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+    </div>
+    <div class="author-info">
+      <h4>VibeMonies Team</h4>
+      <p>We write about prediction markets, vibe coding with AI tools, and modern money-making strategies. Our goal is to help you navigate the new digital economy.</p>
+    </div>
+  </div>
 
   <!-- Related Posts -->
   {{ $related := .Site.RegularPages.Related . | first 3 }}
