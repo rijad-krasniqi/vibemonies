@@ -7,7 +7,7 @@ description: Kalshi is regulated in all 50 states. Polymarket runs on crypto.
 image: /images/uploads/pm-03-kalshi-vs-polymarket.jpg
 keywords: kalshi vs polymarket, polymarket vs kalshi, kalshi review, polymarket
   review, best prediction market, prediction markets 2026
-draft: true
+draft: false
 ---
 
 Two platforms dominate prediction markets right now: Kalshi and Polymarket.
