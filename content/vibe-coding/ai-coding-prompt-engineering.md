@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Master prompt engineering for AI coding tools. Learn techniques to get better code output from Claude, Cursor, and other AI assistants."
 keywords: "prompt engineering, ai coding prompts, claude prompts, better ai code, prompt techniques, vibe coding prompts"
 tags: ["tutorials", "claude-code"]
+image: "/images/uploads/vc-14-prompt-engineering.jpg"
+imageAlt: "Prompt engineering techniques for AI coding showing better results"
 ---
 
 The difference between frustrating AI coding sessions and productive ones often comes down to how you ask.

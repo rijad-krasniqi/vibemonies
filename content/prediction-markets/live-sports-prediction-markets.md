@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Live sports markets on Kalshi and Polymarket offer unique trading opportunities. Here's how to trade in-game with real-time strategies that work."
 keywords: "live sports prediction markets, kalshi sports trading, in-game prediction markets, live betting prediction markets, real-time sports trading"
 tags: ["strategies"]
+image: "/images/uploads/pm-14-live-sport.jpg"
+imageAlt: "Live sports prediction market trading interface with real-time odds and in-game betting"
 ---
 
 The game is tied in the fourth quarter. Your team just scored. The odds haven't adjusted yet.

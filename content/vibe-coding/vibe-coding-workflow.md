@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "The complete vibe coding workflow for building apps with AI. Tools, techniques, and processes used by top AI-assisted developers."
 keywords: "vibe coding workflow, ai coding process, vibe coding 2026, ai development workflow, building apps with ai, claude code workflow"
 tags: ["tutorials", "claude-code"]
+image: "/images/uploads/vc-02-workflow.jpg"
+imageAlt: "Ultimate vibe coding workflow diagram showing AI development process"
 ---
 
 Vibe coding isn't just using AI tools randomly. The best results come from a structured workflow.

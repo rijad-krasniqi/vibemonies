@@ -3,6 +3,8 @@ title: "I Built a Full Web App With Claude Code. I Don't Know How to Code."
 date: 2026-01-05
 description: "This morning I knew nothing about coding. Tonight I have a live web app. Here's exactly how I used Claude Code to build it, step by step."
 keywords: "claude code tutorial, claude code for beginners, vibe coding, build app without coding, claude ai coding, no code web app"
+image: "/images/uploads/vc-05-zero-knowledge-app.jpg"
+imageAlt: "Building a web app with zero coding knowledge using Claude Code AI"
 ---
 
 I need to be honest with you about something.

@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Step-by-step guide to building a complete SaaS product in a weekend using AI coding tools. From idea to deployed product."
 keywords: "build saas with ai, saas in a weekend, ai coding project, vibe coding saas, claude code project, weekend project"
 tags: ["tutorials", "case-studies"]
+image: "/images/uploads/vc-12-building-saas.jpg"
+imageAlt: "Building a SaaS product in a weekend using AI coding tools"
 ---
 
 The idea that building a SaaS takes months is outdated.

@@ -3,6 +3,8 @@ title: "Claude Code + Opus 4.5: The Complete Guide"
 date: 2026-01-05
 description: "Everything changed when Opus 4.5 dropped. Here's how to get the most out of Claude Code with the latest model - tips, tricks, and real examples."
 keywords: "claude code opus 4.5, opus 4.5 tutorial, claude code guide, anthropic opus, vibe coding opus"
+image: "/images/uploads/vc-03-claude-code-opus.jpg"
+imageAlt: "Claude Code with Opus 4.5 model interface showing AI coding capabilities"
 ---
 
 Everyone's freaking out about Opus 4.5. And honestly? They should be.

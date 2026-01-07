@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Kalshi offers weather prediction markets for temperature, hurricanes, and more. Learn how weather markets work and strategies to trade them profitably."
 keywords: "weather prediction markets, kalshi weather, temperature prediction markets, hurricane prediction markets, weather trading"
 tags: ["guides"]
+image: "/images/uploads/pm-13-weather-kalshi.jpg"
+imageAlt: "Weather prediction markets interface on Kalshi showing temperature and hurricane contracts"
 ---
 
 You check the weather forecast every day. What if you could profit from it?
