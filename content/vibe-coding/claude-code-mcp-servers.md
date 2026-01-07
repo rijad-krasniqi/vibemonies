@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Learn what MCP servers are and how to use them with Claude Code. Extend your AI assistant with databases, APIs, and custom tools."
 keywords: "claude code mcp, mcp servers, model context protocol, claude code extensions, claude code tools, mcp tutorial"
 tags: ["claude-code", "tutorials"]
+image: "/images/uploads/vc-07-mcp-servers.jpg"
+imageAlt: "Claude Code MCP servers architecture diagram showing AI extensions"
 ---
 
 MCP servers are how you give Claude Code superpowers beyond its defaults.

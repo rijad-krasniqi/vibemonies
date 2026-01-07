@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Complete v0.dev tutorial. Learn how to use Vercel's AI tool to generate beautiful React components from text descriptions."
 keywords: "v0 dev tutorial, v0 by vercel, v0 ai, generate react components, v0 dev guide, vercel v0"
 tags: ["tools", "tutorials"]
+image: "/images/uploads/vc-10-v0-tutorial.jpg"
+imageAlt: "v0.dev tutorial showing AI-generated React component examples"
 ---
 
 v0 is Vercel's AI tool for generating React components. Describe what you want, get code you can use.

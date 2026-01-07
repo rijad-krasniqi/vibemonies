@@ -3,6 +3,8 @@ title: "How to Optimize Claude Code Tokens (Stop Burning Money)"
 date: 2026-01-05
 description: "Claude Code tokens add up fast. Here's how to reduce token usage, spend less, and get better results from your vibe coding sessions."
 keywords: "claude code tokens, claude code optimization, claude code cost, save tokens claude, claude code efficiency"
+image: "/images/uploads/vc-06-token-optimization.jpg"
+imageAlt: "Claude Code token optimization tips to reduce costs and save money"
 ---
 
 Someone in the vibe coding community asked a great question: "Every time I start a new session and Claude needs to reread my codebase to implement a feature, I burn so many tokens. How do I be more efficient?"

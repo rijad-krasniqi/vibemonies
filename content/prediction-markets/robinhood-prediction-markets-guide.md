@@ -3,6 +3,8 @@ title: "Robinhood Prediction Markets: Complete Beginner's Guide"
 date: 2026-01-05
 description: "Robinhood now offers prediction markets through Kalshi. Here's how to get started trading event contracts on the platform you already use."
 keywords: "robinhood prediction markets, robinhood event contracts, robinhood kalshi, robinhood betting, prediction markets app"
+image: "/images/uploads/pm-16-robinhood-guide.jpg"
+imageAlt: "Robinhood app prediction markets interface showing event contracts trading screen"
 ---
 
 If you already use Robinhood for stocks, you now have access to prediction markets. No new account needed. Same app. New opportunities.

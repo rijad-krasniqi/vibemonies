@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Learn how to use AI tools like Claude Code to debug code faster. Techniques for describing bugs, investigating issues, and fixing errors."
 keywords: "debugging with ai, ai bug fixing, claude code debugging, fix bugs with ai, ai troubleshooting, vibe coding debug"
 tags: ["tutorials", "claude-code"]
+image: "/images/uploads/vc-16-debugging.jpg"
+imageAlt: "Debugging with AI tools showing bug fixing process"
 ---
 
 Debugging used to mean hours staring at code, adding console.log statements, and slowly narrowing down the problem.

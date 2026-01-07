@@ -3,6 +3,8 @@ title: "Use Claude for Shopify Analytics (Step-by-Step Guide)"
 date: 2026-01-05
 description: "Export your Shopify data, upload to Claude, get insights that would cost thousands from analysts. Here's how to use AI for ecommerce analytics."
 keywords: "shopify claude, shopify analytics ai, claude shopify data, ecommerce analytics ai, shopify insights claude"
+image: "/images/uploads/vc-17-shopify-analytics.jpg"
+imageAlt: "Using Claude for Shopify analytics showing data insights and reports"
 ---
 
 Someone shared this workflow on Twitter and it blew up: "Export your Shopify order data, upload to Claude, talk, enjoy useful insights."

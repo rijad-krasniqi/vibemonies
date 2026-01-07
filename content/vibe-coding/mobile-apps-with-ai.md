@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Complete guide to building mobile apps with AI coding tools. Learn React Native development with Claude Code step by step."
 keywords: "react native ai, mobile app ai, claude code mobile, build mobile app with ai, react native vibe coding, ai app development"
 tags: ["tutorials", "claude-code"]
+image: "/images/uploads/vc-13-mobile-apps.jpg"
+imageAlt: "Building mobile apps with AI using React Native and Claude Code"
 ---
 
 Mobile apps used to require specialized knowledge. Xcode, Android Studio, platform-specific APIs, device testing setups.

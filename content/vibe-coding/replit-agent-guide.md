@@ -4,6 +4,8 @@ date: 2026-01-05
 description: "Complete guide to Replit Agent. Learn how to build full applications using AI without writing a single line of code yourself."
 keywords: "replit agent, replit ai, replit agent tutorial, build apps without code, replit vibe coding, ai app builder"
 tags: ["tools", "tutorials"]
+image: "/images/uploads/vc-11-replit-agent.jpg"
+imageAlt: "Replit Agent interface building full apps with AI assistance"
 ---
 
 Replit Agent is the closest thing we have to "describe an app, get an app."

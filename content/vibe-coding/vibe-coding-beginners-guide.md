@@ -3,6 +3,8 @@ title: "Vibe Coding for Beginners: The Complete 2026 Guide"
 date: 2026-01-05
 description: "Everything you need to know about vibe coding in 2026. What it is, how it works, which tools to use, and how to start building apps with AI today."
 keywords: "vibe coding, vibe coding tutorial, what is vibe coding, vibe coding beginner, ai coding for beginners"
+image: "/images/uploads/vc-01-beginners-guide.jpg"
+imageAlt: "Vibe coding beginner's guide showing AI-assisted development workflow"
 ---
 
 "Vibe coding" sounds like a meme. It's not. It's a genuine shift in how software gets built.
