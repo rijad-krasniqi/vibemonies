@@ -1,8 +1,13 @@
 ---
 title: "Kalshi vs Polymarket: Which Platform Should You Use in 2026?"
 date: 2026-01-05
-description: "Kalshi is regulated in all 50 states. Polymarket runs on crypto. Both did billions in volume. Here's how to choose between them for prediction market trading."
-keywords: "kalshi vs polymarket, polymarket vs kalshi, kalshi review, polymarket review, best prediction market, prediction markets 2026"
+description: Kalshi is regulated in all 50 states. Polymarket runs on crypto.
+  Both did billions in volume. Here's how to choose between them for prediction
+  market trading.
+image: /images/uploads/pm-03-kalshi-vs-polymarket.jpg
+keywords: kalshi vs polymarket, polymarket vs kalshi, kalshi review, polymarket
+  review, best prediction market, prediction markets 2026
+draft: true
 ---
 
 Two platforms dominate prediction markets right now: Kalshi and Polymarket.
