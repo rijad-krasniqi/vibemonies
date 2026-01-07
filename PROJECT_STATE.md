@@ -1,6 +1,6 @@
 # VibeMonies - Project State & Development Guide
 
-**Last Updated:** January 6, 2026
+**Last Updated:** January 7, 2026
 **Live Site:** https://vibemonies.com
 **GitHub Repo:** https://github.com/rijad-krasniqi/vibemonies
 
@@ -23,6 +23,23 @@ VibeMonies is a Hugo-based blog focused on three main content areas:
 | Prediction Markets | 17 | `content/prediction-markets/` |
 | Vibe Coding | 17 | `content/vibe-coding/` |
 | Making Money | 15 | `content/making-money/` |
+
+### Article Images Status
+
+All images are optimized: PNG→JPG, 1200x630px, quality 85%, compressed to 30-200KB
+
+| Category | Images Added | Status |
+|----------|-------------|--------|
+| Prediction Markets | 15/17 | pm-01 to pm-09, pm-12 to pm-16 ✅ |
+| Vibe Coding | 17/17 | vc-01 to vc-17 ✅ |
+| Making Money | 0/15 | Pending |
+
+**Missing PM Images:**
+- pm-10-liquidity.jpg (prediction-market-liquidity.md)
+- pm-11-taxes-guide.jpg (prediction-markets-taxes-guide.md)
+- pm-17-draftkings.jpg (draftkings-prediction-markets.md - has legacy image)
+
+**Image Location:** `static/images/uploads/`
 
 ### Deployment
 - **Hosting:** Netlify
@@ -136,7 +153,10 @@ hugo
 ## Pending/Future Tasks
 
 ### Immediate (User Working On)
-- [ ] Add featured images to all articles
+- [x] Add featured images to Prediction Markets articles (15/17 done)
+- [x] Add featured images to Vibe Coding articles (17/17 done)
+- [ ] Add featured images to Making Money articles (0/15)
+- [ ] Add remaining PM images (pm-10, pm-11, pm-17)
 - [ ] Edit and polish article content
 
 ### Recommended Next Steps
