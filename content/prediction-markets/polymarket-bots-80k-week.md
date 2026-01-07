@@ -3,6 +3,7 @@ title: "Polymarket Bots Are Making $80K/Week - Here's What They Do"
 date: 2026-01-05
 description: "Automated trading bots on Polymarket are generating $80K+ weekly. Learn how they work, who's running them, and whether you can compete."
 keywords: "polymarket bots, polymarket automated trading, polymarket profits, prediction market bots, polymarket weekly earnings"
+image: "/images/uploads/pm-04-polymarket-bots.jpg"
 ---
 
 Someone just shared their bot stats: $80,000 in a single week. Not from lucky bets. From systematic automated trading.

@@ -3,6 +3,7 @@ title: "What Are Prediction Markets? Complete Beginner's Guide"
 date: 2026-01-05
 description: "Prediction markets let you trade on future events. Learn how they work, why they're often more accurate than polls, and how to get started."
 keywords: "what are prediction markets, prediction markets explained, how prediction markets work, polymarket guide, kalshi guide"
+image: "/images/uploads/pm-01-what-are-prediction-markets.jpg"
 ---
 
 Prediction markets are exchanges where you trade on the outcomes of future events. Will inflation be above 3%? Who wins the Super Bowl? Will a bill pass Congress?

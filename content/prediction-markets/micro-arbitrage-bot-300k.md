@@ -3,6 +3,7 @@ title: "How a Micro-Arbitrage Bot Made $300K on Polymarket"
 date: 2026-01-05
 description: "A low-latency trading bot made over $300K on Polymarket through micro-arbitrage. Here's exactly how the strategy works and what you need to know."
 keywords: "polymarket arbitrage, polymarket bot, micro arbitrage crypto, prediction market arbitrage, polymarket trading bot"
+image: "/images/uploads/pm-06-micro-arbitrage-300k.jpg"
 ---
 
 There's a trader on Polymarket who's been making serious money. Not by predicting outcomes. By being faster than everyone else.

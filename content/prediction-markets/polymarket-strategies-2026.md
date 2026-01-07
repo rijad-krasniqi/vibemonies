@@ -4,7 +4,7 @@ date: 2026-01-05
 description: Polymarket did $635M in the first 3 days of January 2026. Here are
   7 strategies smart traders are using to profit from prediction markets right
   now.
-image: /images/uploads/chatgpt-image-jan-6-2026-09_33_09-pm.png
+image: /images/uploads/pm-02-polymarket-strategies.jpg
 keywords: polymarket strategies, polymarket trading, how to make money
   polymarket, polymarket 2026, prediction market strategies
 draft: false

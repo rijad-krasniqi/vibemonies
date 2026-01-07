@@ -4,6 +4,7 @@ date: 2026-01-05
 description: "A technical guide to the Polymarket API. Learn how to fetch market data, place orders, and build your first automated trading bot."
 keywords: "polymarket api, polymarket bot, polymarket trading bot, prediction market api, automated trading polymarket"
 tags: ["bots"]
+image: "/images/uploads/pm-08-api-guide.jpg"
 ---
 
 Manual trading is fine for casual participation. But if you want to capture edges consistently, you need automation.

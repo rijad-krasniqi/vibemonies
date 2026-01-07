@@ -4,6 +4,7 @@ date: 2026-01-05
 description: "Most prediction market traders blow up because of bad bankroll management, not bad predictions. Here's how to manage your capital properly."
 keywords: "prediction market bankroll, prediction market risk management, polymarket bankroll, kalshi money management, position sizing prediction markets"
 tags: ["strategies"]
+image: "/images/uploads/pm-09-bankroll-management.jpg"
 ---
 
 Here's a painful truth: most prediction market traders who lose money aren't wrong about their predictions. They're wrong about their position sizes.

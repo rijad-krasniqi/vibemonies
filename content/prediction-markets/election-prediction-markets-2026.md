@@ -4,6 +4,7 @@ date: 2026-01-05
 description: "2026 midterms are coming. Here's how to trade election prediction markets on Polymarket and Kalshi with strategies that actually work."
 keywords: "election prediction markets 2026, political prediction markets, midterm election trading, polymarket elections, kalshi elections"
 tags: ["strategies"]
+image: "/images/uploads/pm-12-election-markets.jpg"
 ---
 
 2026 is a midterm election year. Every House seat. A third of the Senate. Thirty-six gubernatorial races. Plus countless state and local elections.
